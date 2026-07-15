@@ -172,6 +172,7 @@ export const workItems: WorkItem[] = [
       "Premium website for a Calgary LED lighting and home security company. Gallery, service pages and quote form.",
     tags: ["Gallery", "Multi-page", "Quote System"],
     href: "https://www.suncityroofinglethbridge.net/",
+    screenshotSrc: "/work/glow-installations.jpg",
   },
   {
     icon: "⚡",
@@ -182,6 +183,7 @@ export const workItems: WorkItem[] = [
       "Professional website for a Calgary master electrician. Emergency CTAs, service listings, FAQ section and contact form optimized for local search.",
     tags: ["Emergency CTA", "Local SEO", "Contact Form"],
     href: "https://www.restoreelectric.ca/",
+    screenshotSrc: "/work/restore-electric.webp",
   },
   {
     icon: "🚗",
@@ -192,6 +194,7 @@ export const workItems: WorkItem[] = [
       "Full website plus subscriber portal with membership plans, benefit tracking, appointment booking, payment integration and admin dashboard.",
     tags: ["Member Portal", "Stripe Payments", "Backend", "AI Automation"],
     href: "https://autorepairxperts.vercel.app/",
+    screenshotSrc: "/work/auto-repair-xperts.webp",
   },
   {
     icon: "🔧",
@@ -202,6 +205,7 @@ export const workItems: WorkItem[] = [
       "Full-service website for a multi-trade electrical, plumbing and appliance company — complete with a live AI chat assistant that answers customer questions and captures leads instantly, day or night.",
     tags: ["AI Assistant", "Multi-page", "Lead Gen"],
     href: "https://yayageneralservice.com/",
+    screenshotSrc: "/work/yaya-general-service.jpg",
     featured: true,
   },
 ];
