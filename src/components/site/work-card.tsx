@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowUpRight, Clock } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -20,6 +21,25 @@ function WorkCard({ item }: { item: WorkItem }) {
       {item.featured && (
         <div className="pointer-events-none absolute -top-16 -right-10 h-48 w-48 rounded-full bg-blue-500/15 blur-3xl" />
       )}
+
+      {item.screenshotSrc ? (
+        <Image
+          src={item.screenshotSrc}
+          alt=""
+          aria-hidden="true"
+          fill
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          className="pointer-events-none absolute inset-0 object-cover object-top opacity-[0.14]"
+        />
+      ) : (
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-4 -bottom-8 text-[9rem] leading-none opacity-[0.07] select-none"
+        >
+          {item.icon}
+        </span>
+      )}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
 
       <div className="relative z-10 flex flex-1 flex-col gap-5">
         <div className="flex items-start justify-between gap-3">

@@ -146,6 +146,10 @@ export type WorkItem = {
   tags: string[];
   href: string | null;
   featured?: boolean;
+  // Optional screenshot shown faded in the card background. Drop a file in
+  // public/work/ and point this at it — falls back to a watermark of `icon`
+  // when unset.
+  screenshotSrc?: string;
 };
 
 export const workItems: WorkItem[] = [
