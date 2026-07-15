@@ -3,8 +3,6 @@ import { ArrowRight } from "lucide-react";
 import { ServiceCard } from "@/components/site/service-card";
 import { services, toolsUsed } from "@/lib/site-config";
 
-const PROFICIENCY = 88;
-
 function ServicesSection() {
   return (
     <section id="services" className="relative py-20 sm:py-28">
@@ -55,24 +53,7 @@ function ServicesSection() {
           ))}
         </div>
 
-        <div className="animate-fade-in delay-600 mt-14 flex flex-col items-center justify-between gap-8 rounded-3xl border border-white/10 card-glass px-8 py-8 sm:flex-row">
-          <div className="flex items-center gap-6">
-            <span className="text-gradient-blue text-5xl font-bold tracking-tight sm:text-6xl">
-              {PROFICIENCY}%
-            </span>
-            <div className="max-w-xs">
-              <p className="font-ui text-sm text-zinc-300">
-                Average proficiency across all core disciplines
-              </p>
-              <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
-                <div
-                  className="h-full rounded-full bg-gradient-to-r from-blue-500 to-blue-300"
-                  style={{ width: `${PROFICIENCY}%` }}
-                />
-              </div>
-            </div>
-          </div>
-
+        <div className="animate-fade-in delay-600 mt-14 flex justify-center">
           <a
             href="#work"
             className="group inline-flex items-center gap-2 font-ui text-sm font-semibold text-blue-300 transition-colors hover:text-blue-200"
