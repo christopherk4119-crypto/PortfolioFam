@@ -119,11 +119,15 @@ function ContactForm() {
       <div className="space-y-2">
         <Label htmlFor="service">What Do You Need?</Label>
         <Select id="service" name="service" defaultValue="" required>
-          <option value="" disabled>
+          <option value="" disabled className="bg-[#0b1220] text-zinc-400">
             Select a service...
           </option>
           {serviceOptions.map((option) => (
-            <option key={option} value={option}>
+            <option
+              key={option}
+              value={option}
+              className="bg-[#0b1220] text-white"
+            >
               {option}
             </option>
           ))}

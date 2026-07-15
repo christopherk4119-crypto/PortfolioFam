@@ -8,14 +8,21 @@ import type { WorkItem } from "@/lib/site-config";
 
 function WorkCard({ item }: { item: WorkItem }) {
   const isLive = item.status === "Live";
+  const Wrapper = item.href ? "a" : "div";
+  const wrapperProps = item.href
+    ? { href: item.href, target: "_blank", rel: "noopener noreferrer" }
+    : {};
 
   return (
-    <div
+    <Wrapper
+      {...wrapperProps}
       className={cn(
-        "relative flex h-full flex-col overflow-hidden rounded-3xl border p-7",
+        "group relative flex h-full flex-col overflow-hidden rounded-3xl border p-7 transition-all duration-300",
         item.featured
           ? "border-blue-400/25 card-glass"
           : "border-white/10 card-glass",
+        item.href &&
+          "hover:-translate-y-1.5 hover:border-blue-400/30 hover:shadow-2xl hover:shadow-blue-950/40",
       )}
     >
       {item.featured && (
@@ -29,12 +36,12 @@ function WorkCard({ item }: { item: WorkItem }) {
           aria-hidden="true"
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"
-          className="pointer-events-none absolute inset-0 object-cover object-top opacity-[0.14]"
+          className="pointer-events-none absolute inset-0 object-cover object-top opacity-[0.14] transition-opacity duration-300 group-hover:opacity-[0.22]"
         />
       ) : (
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute -right-4 -bottom-8 text-[9rem] leading-none opacity-[0.07] select-none"
+          className="pointer-events-none absolute -right-4 -bottom-8 text-[9rem] leading-none opacity-[0.07] transition-opacity duration-300 select-none group-hover:opacity-[0.11]"
         >
           {item.icon}
         </span>
@@ -84,15 +91,10 @@ function WorkCard({ item }: { item: WorkItem }) {
 
         <div className="mt-auto pt-2">
           {item.href ? (
-            <a
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-1.5 font-ui text-sm font-semibold text-blue-300 transition-colors hover:text-blue-200"
-            >
+            <span className="inline-flex items-center gap-1.5 font-ui text-sm font-semibold text-blue-300 transition-colors group-hover:text-blue-200">
               View Live Site
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
+            </span>
           ) : (
             <span className="font-ui text-sm font-medium text-zinc-500">
               Live site coming soon
@@ -100,7 +102,7 @@ function WorkCard({ item }: { item: WorkItem }) {
           )}
         </div>
       </div>
-    </div>
+    </Wrapper>
   );
 }
 

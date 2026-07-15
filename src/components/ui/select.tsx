@@ -12,6 +12,7 @@ function Select({
     <div className="relative">
       <select
         data-slot="select"
+        style={{ colorScheme: "dark" }}
         className={cn(
           "flex h-11 w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-2 pr-10 font-ui text-sm text-white transition-colors outline-none",
           "focus-visible:border-blue-400/40 focus-visible:bg-blue-500/5 focus-visible:ring-2 focus-visible:ring-blue-400/20",
