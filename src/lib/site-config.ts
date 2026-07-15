@@ -10,8 +10,9 @@ export const siteConfig = {
   location: "Alberta, Canada 🇨🇦 — Available Nationwide",
 };
 
-// CTAs across the site scroll to the contact form rather than opening mail directly.
-export const ctaHref = "#contact";
+// Shared header/footer CTA — a real route so it works from every page, not
+// just the homepage where a #contact anchor would exist.
+export const ctaHref = "/contact";
 
 export const mailtoHref = `mailto:${siteConfig.contactEmail}?subject=${encodeURIComponent(
   "Free Demo Request",
@@ -23,10 +24,10 @@ export const telHref = `tel:+1${siteConfig.contactPhone.replace(/-/g, "")}`;
 export const formspreeEndpoint = "https://formspree.io/f/xykaoaen";
 
 export const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Process", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/services" },
+  { label: "Work", href: "/work" },
+  { label: "Process", href: "/process" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export type ProcessStep = {

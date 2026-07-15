@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { LogoMark } from "@/components/site/logo-mark";
 import { ctaHref } from "@/lib/site-config";
 
@@ -10,24 +12,24 @@ function SiteFooter() {
           <LogoMark size={18} />© 2026 CDigitalStudios — Calgary, Alberta 🇨🇦
         </span>
         <div className="flex items-center gap-5">
-          <a href="#work" className="transition-colors hover:text-blue-300">
+          <Link href="/work" className="transition-colors hover:text-blue-300">
             Work
-          </a>
-          <a
-            href="#services"
+          </Link>
+          <Link
+            href="/services"
             className="transition-colors hover:text-blue-300"
           >
             Services
-          </a>
-          <a
-            href="#process"
+          </Link>
+          <Link
+            href="/process"
             className="transition-colors hover:text-blue-300"
           >
             Process
-          </a>
-          <a href={ctaHref} className="transition-colors hover:text-blue-300">
+          </Link>
+          <Link href={ctaHref} className="transition-colors hover:text-blue-300">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

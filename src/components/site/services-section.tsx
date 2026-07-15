@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { ServiceCard } from "@/components/site/service-card";
@@ -38,13 +39,13 @@ function ServicesSection() {
         </div>
 
         <div className="animate-fade-in delay-600 mt-14 flex justify-center">
-          <a
-            href="#work"
+          <Link
+            href="/work"
             className="group inline-flex items-center gap-2 font-ui text-sm font-semibold text-blue-300 transition-colors hover:text-blue-200"
           >
             View full portfolio
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

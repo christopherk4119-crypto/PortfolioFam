@@ -15,7 +15,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CDigitalStudios — Calgary & Alberta Digital Growth Partner",
+  title: {
+    default: "CDigitalStudios — Calgary & Alberta Digital Growth Partner",
+    template: "%s | CDigitalStudios",
+  },
   description:
     "Custom websites, local SEO and AI automation for Alberta businesses ready to dominate online.",
 };

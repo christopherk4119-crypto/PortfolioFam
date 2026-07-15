@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Check, ChevronRight, Play } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -41,10 +42,10 @@ function HeroSection() {
 
             <div className="animate-fade-in delay-400 flex flex-col gap-3 sm:flex-row sm:gap-4">
               <Button asChild className="group">
-                <a href={ctaHref}>
+                <Link href={ctaHref}>
                   Get a Free Demo
                   <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
+                </Link>
               </Button>
 
               <Button variant="outline" asChild>
