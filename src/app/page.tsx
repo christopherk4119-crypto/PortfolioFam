@@ -2,6 +2,7 @@ import { SiteHeader } from "@/components/site/site-header";
 import { HeroSection } from "@/components/site/hero-section";
 import { ServicesSection } from "@/components/site/services-section";
 import { WorkSection } from "@/components/site/work-section";
+import { ProcessSection } from "@/components/site/process-section";
 import { ContactSection } from "@/components/site/contact-section";
 import { SiteFooter } from "@/components/site/site-footer";
 import { BackgroundGlow } from "@/components/site/background-glow";
@@ -16,6 +17,7 @@ export default function Home() {
       </div>
       <ServicesSection />
       <WorkSection />
+      <ProcessSection />
       <ContactSection />
       <SiteFooter />
     </div>

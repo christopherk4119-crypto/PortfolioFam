@@ -1,27 +1,14 @@
 import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { LogoMark } from "@/components/site/logo-mark";
 import { ctaHref, navLinks } from "@/lib/site-config";
 
 function SiteHeader() {
   return (
     <header className="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-4 pt-6 sm:px-6 lg:px-8">
-      <a href="#top" className="flex items-center gap-2.5">
-        <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 shadow-lg shadow-blue-500/30">
-          <svg
-            viewBox="0 0 24 24"
-            className="h-5 w-5 text-white"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.2"
-          >
-            <path
-              d="M4 4l8 16 8-16"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
+      <a href="#top" className="flex items-center gap-2">
+        <LogoMark size={36} />
         <span className="text-lg font-semibold tracking-tight">
           CDigital<span className="text-blue-400">Studios</span>
         </span>

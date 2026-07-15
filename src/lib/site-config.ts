@@ -19,10 +19,47 @@ export const mailtoHref = `mailto:${siteConfig.contactEmail}?subject=${encodeURI
 
 export const telHref = `tel:+1${siteConfig.contactPhone.replace(/-/g, "")}`;
 
+// Formspree endpoint used by the contact form.
+export const formspreeEndpoint = "https://formspree.io/f/xykaoaen";
+
 export const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Work", href: "#work" },
+  { label: "Process", href: "#process" },
   { label: "Contact", href: "#contact" },
+];
+
+export type ProcessStep = {
+  number: string;
+  title: string;
+  description: string;
+};
+
+export const processSteps: ProcessStep[] = [
+  {
+    number: "01",
+    title: "Free Consultation",
+    description:
+      "We hop on a quick call to talk about your business, your goals and what you actually need — no pressure, no obligation, just an honest conversation about how I can help.",
+  },
+  {
+    number: "02",
+    title: "I Build a Demo",
+    description:
+      "I build a working demo of your website before you spend a dollar, so you can see exactly what you're getting before you commit to anything.",
+  },
+  {
+    number: "03",
+    title: "You Approve It",
+    description:
+      "You review the demo and request changes — we go back and forth until every detail is exactly right for your business.",
+  },
+  {
+    number: "04",
+    title: "We Go Live",
+    description:
+      "Once you approve it, I deploy everything and hand over the keys. Your business goes live and starts attracting customers online.",
+  },
 ];
 
 export const serviceOptions = [
