@@ -1,5 +1,4 @@
 import { WorkCard } from "@/components/site/work-card";
-import { cn } from "@/lib/utils";
 import { workItems } from "@/lib/site-config";
 
 function WorkSection() {
@@ -24,10 +23,7 @@ function WorkSection() {
           {workItems.map((item, i) => (
             <div
               key={item.name}
-              className={cn(
-                "animate-fade-in",
-                item.featured && "lg:col-span-2",
-              )}
+              className="animate-fade-in"
               style={{ animationDelay: `${0.1 * i + 0.3}s` }}
             >
               <WorkCard item={item} />
