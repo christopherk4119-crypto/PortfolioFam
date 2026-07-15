@@ -14,7 +14,7 @@ function SiteHeader() {
         </span>
       </a>
 
-      <nav className="hidden items-center gap-8 font-ui text-sm text-zinc-400 md:flex">
+      <nav className="hidden items-center gap-8 font-ui text-base font-medium text-zinc-300 md:flex">
         {navLinks.map((link) => (
           <a
             key={link.href}

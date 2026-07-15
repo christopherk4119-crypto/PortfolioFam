@@ -72,14 +72,6 @@ export const serviceOptions = [
   "All Three (Website + SEO + Automation)",
 ];
 
-export const toolsUsed = [
-  "Figma",
-  "Framer",
-  "Webflow",
-  "Tailwind CSS",
-  "Adobe CC",
-];
-
 export type Service = {
   icon: string;
   badge: string;
