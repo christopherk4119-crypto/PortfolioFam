@@ -4,16 +4,35 @@ export const SHOW_TESTIMONIALS = false;
 export const siteConfig = {
   name: "CDigitalStudios",
   tagline: "Calgary & Alberta Digital Growth Partner",
-  contactEmail: "christopherk4119@gmail.com",
+  contactEmail: "christopherb.digital@gmail.com",
+  contactPhone: "587-703-0069",
+  contactPhoneDisplay: "(587) 703-0069",
+  location: "Alberta, Canada 🇨🇦 — Available Nationwide",
 };
 
-export const contactHref = `mailto:${siteConfig.contactEmail}?subject=${encodeURIComponent(
+// CTAs across the site scroll to the contact form rather than opening mail directly.
+export const ctaHref = "#contact";
+
+export const mailtoHref = `mailto:${siteConfig.contactEmail}?subject=${encodeURIComponent(
   "Free Demo Request",
 )}`;
+
+export const telHref = `tel:+1${siteConfig.contactPhone.replace(/-/g, "")}`;
 
 export const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Work", href: "#work" },
+  { label: "Contact", href: "#contact" },
+];
+
+export const serviceOptions = [
+  "Website",
+  "SEO",
+  "Automation System",
+  "Website + SEO",
+  "Website + Automation System",
+  "SEO + Automation System",
+  "All Three (Website + SEO + Automation)",
 ];
 
 export const toolsUsed = [

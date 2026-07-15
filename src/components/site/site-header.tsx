@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { contactHref, navLinks } from "@/lib/site-config";
+import { ctaHref, navLinks } from "@/lib/site-config";
 
 function SiteHeader() {
   return (
@@ -40,7 +40,7 @@ function SiteHeader() {
       </nav>
 
       <Button variant="ghost" size="sm" asChild className="group">
-        <a href={contactHref}>
+        <a href={ctaHref}>
           Get a Free Demo
           <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
         </a>

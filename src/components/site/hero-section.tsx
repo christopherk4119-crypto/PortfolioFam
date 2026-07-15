@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { PulseDot } from "@/components/ui/pulse-dot";
 import { StatsCard } from "@/components/site/stats-card";
 import { TestimonialCard } from "@/components/site/testimonial-card";
-import { SHOW_TESTIMONIALS, contactHref } from "@/lib/site-config";
+import { SHOW_TESTIMONIALS, ctaHref } from "@/lib/site-config";
 
 const trustPoints = [
   "No payment until you approve the demo",
@@ -41,7 +41,7 @@ function HeroSection() {
 
             <div className="animate-fade-in delay-400 flex flex-col gap-3 sm:flex-row sm:gap-4">
               <Button asChild className="group">
-                <a href={contactHref}>
+                <a href={ctaHref}>
                   Get a Free Demo
                   <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>

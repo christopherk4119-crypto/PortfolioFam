@@ -1,4 +1,4 @@
-import { contactHref } from "@/lib/site-config";
+import { ctaHref } from "@/lib/site-config";
 
 function SiteFooter() {
   return (
@@ -16,7 +16,7 @@ function SiteFooter() {
           >
             Services
           </a>
-          <a href={contactHref} className="transition-colors hover:text-blue-300">
+          <a href={ctaHref} className="transition-colors hover:text-blue-300">
             Contact
           </a>
         </div>
