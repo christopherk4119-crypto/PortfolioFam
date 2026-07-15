@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { PulseDot } from "@/components/ui/pulse-dot";
 
 const stats = [
-  { value: "5", suffix: "+", label: "Websites Built" },
+  { value: "4", suffix: "+", label: "Websites Built" },
   { value: "3", suffix: "", label: "Core Services" },
   { value: "100", suffix: "%", label: "Custom Built" },
   { value: "YYC", suffix: "", label: "Calgary Based" },

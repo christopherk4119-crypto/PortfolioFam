@@ -154,16 +154,6 @@ export type WorkItem = {
 
 export const workItems: WorkItem[] = [
   {
-    icon: "🏠",
-    status: "Coming Soon",
-    category: "Roofing — Lethbridge",
-    name: "Sun City Roofing",
-    description:
-      "Full multi-page website for a Lethbridge roofing company. Services, gallery, free estimate form and shingle comparison section.",
-    tags: ["Multi-page", "Lead Gen", "Local SEO"],
-    href: null,
-  },
-  {
     icon: "💡",
     status: "Live",
     category: "LED Installation — Calgary",
