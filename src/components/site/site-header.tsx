@@ -1,0 +1,52 @@
+import { ArrowRight } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
+import { contactHref, navLinks } from "@/lib/site-config";
+
+function SiteHeader() {
+  return (
+    <header className="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-4 pt-6 sm:px-6 lg:px-8">
+      <a href="#top" className="flex items-center gap-2.5">
+        <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 shadow-lg shadow-blue-500/30">
+          <svg
+            viewBox="0 0 24 24"
+            className="h-5 w-5 text-white"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.2"
+          >
+            <path
+              d="M4 4l8 16 8-16"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+        <span className="text-lg font-semibold tracking-tight">
+          CDigital<span className="text-blue-400">Studios</span>
+        </span>
+      </a>
+
+      <nav className="hidden items-center gap-8 font-ui text-sm text-zinc-400 md:flex">
+        {navLinks.map((link) => (
+          <a
+            key={link.href}
+            href={link.href}
+            className="transition-colors hover:text-white"
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
+
+      <Button variant="ghost" size="sm" asChild className="group">
+        <a href={contactHref}>
+          Get a Free Demo
+          <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+        </a>
+      </Button>
+    </header>
+  );
+}
+
+export { SiteHeader };
