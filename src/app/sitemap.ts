@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://cdigitalstudios.ca";
+// Canonical host — cdigitalstudios.ca redirects here, so the sitemap
+// should list the final destination directly rather than a redirect.
+const BASE_URL = "https://www.cdigitalstudios.ca";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ["", "/services", "/work", "/process", "/contact"];
