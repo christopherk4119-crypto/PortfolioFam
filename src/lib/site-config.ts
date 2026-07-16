@@ -30,6 +30,30 @@ export const navLinks = [
   { label: "Contact", href: "/contact" },
 ];
 
+export type GoogleReviewEmbed = {
+  name: string;
+  // Google's numeric place ID (CID), extracted from the business's Maps
+  // share URL. Lets us embed the exact listing (map + live star rating)
+  // without a Google Maps API key.
+  cid: string;
+  mapsUrl: string;
+};
+
+export const googleReviewEmbeds: GoogleReviewEmbed[] = [
+  {
+    name: "Restore Electric",
+    cid: "9965230480678931577",
+    mapsUrl:
+      "https://www.google.com/maps/place/Restore+Electric+LTD/@51.138397,-114.1290159,17z/data=!4m8!3m7!1s0x5371672925ccac51:0x8a4b9c52f9c34c79!8m2!3d51.138397!4d-114.126441!9m1!1b1!16s%2Fg%2F11zjvlx1bn",
+  },
+  {
+    name: "Yaya Electrical, Plumbing & Appliance",
+    cid: "7836733805385584931",
+    mapsUrl:
+      "https://www.google.com/maps/place/Yaya+Electrical,+Plumbing+%26+Appliance/@51.1083477,-113.9560472,17z/data=!4m8!3m7!1s0x537163e3a5fbaab1:0x6cc1abe00d4d9123!8m2!3d51.1083444!4d-113.9534723!9m1!1b1!16s%2Fg%2F11zgm5y8t3",
+  },
+];
+
 export type ProcessStep = {
   number: string;
   title: string;
