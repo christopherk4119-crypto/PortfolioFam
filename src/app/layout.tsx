@@ -15,6 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://cdigitalstudios.ca"),
   title: {
     default: "CDigitalStudios — Calgary & Alberta Digital Growth Partner",
     template: "%s | CDigitalStudios",
