@@ -147,17 +147,6 @@ export type WorkItem = {
 
 export const workItems: WorkItem[] = [
   {
-    icon: "💡",
-    status: "Live",
-    category: "LED Installation — Calgary",
-    name: "Glow Installations",
-    description:
-      "Premium website for a Calgary LED lighting and home security company. Gallery, service pages and quote form.",
-    tags: ["Gallery", "Multi-page", "Quote System"],
-    href: "https://www.suncityroofinglethbridge.net/",
-    screenshotSrc: "/work/glow-installations.jpg",
-  },
-  {
     icon: "⚡",
     status: "Live",
     category: "Electrician — Calgary",
@@ -167,17 +156,6 @@ export const workItems: WorkItem[] = [
     tags: ["Emergency CTA", "Local SEO", "Contact Form"],
     href: "https://www.restoreelectric.ca/",
     screenshotSrc: "/work/restore-electric.webp",
-  },
-  {
-    icon: "🚗",
-    status: "Live",
-    category: "Auto Repair — Calgary",
-    name: "Auto Repair Xperts",
-    description:
-      "Full website plus subscriber portal with membership plans, benefit tracking, appointment booking, payment integration and admin dashboard.",
-    tags: ["Member Portal", "Stripe Payments", "Backend", "AI Automation"],
-    href: "https://autorepairxperts.vercel.app/",
-    screenshotSrc: "/work/auto-repair-xperts.webp",
   },
   {
     icon: "🔧",
@@ -190,5 +168,27 @@ export const workItems: WorkItem[] = [
     href: "https://yayageneralservice.com/",
     screenshotSrc: "/work/yaya-general-service.jpg",
     featured: true,
+  },
+  {
+    icon: "💡",
+    status: "Live",
+    category: "LED Installation — Calgary",
+    name: "Glow Installations",
+    description:
+      "Premium website for a Calgary LED lighting and home security company. Gallery, service pages and quote form.",
+    tags: ["Gallery", "Multi-page", "Quote System"],
+    href: "https://www.suncityroofinglethbridge.net/",
+    screenshotSrc: "/work/glow-installations.jpg",
+  },
+  {
+    icon: "🚗",
+    status: "Live",
+    category: "Auto Repair — Calgary",
+    name: "Auto Repair Xperts",
+    description:
+      "Full website plus subscriber portal with membership plans, benefit tracking, appointment booking, payment integration and admin dashboard.",
+    tags: ["Member Portal", "Stripe Payments", "Backend", "AI Automation"],
+    href: "https://autorepairxperts.vercel.app/",
+    screenshotSrc: "/work/auto-repair-xperts.webp",
   },
 ];
