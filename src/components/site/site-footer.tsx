@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { LogoMark } from "@/components/site/logo-mark";
-import { ctaHref } from "@/lib/site-config";
+import { navLinks } from "@/lib/site-config";
 
 function SiteFooter() {
   return (
@@ -11,25 +11,16 @@ function SiteFooter() {
         <span className="flex items-center gap-2">
           <LogoMark size={18} />© 2026 CDigitalStudios — Calgary, Alberta 🇨🇦
         </span>
-        <div className="flex items-center gap-5">
-          <Link href="/work" className="transition-colors hover:text-blue-300">
-            Work
-          </Link>
-          <Link
-            href="/services"
-            className="transition-colors hover:text-blue-300"
-          >
-            Services
-          </Link>
-          <Link
-            href="/process"
-            className="transition-colors hover:text-blue-300"
-          >
-            Process
-          </Link>
-          <Link href={ctaHref} className="transition-colors hover:text-blue-300">
-            Contact
-          </Link>
+        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="transition-colors hover:text-blue-300"
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
       </div>
     </footer>

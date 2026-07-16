@@ -24,9 +24,11 @@ export const telHref = `tel:+1${siteConfig.contactPhone.replace(/-/g, "")}`;
 export const formspreeEndpoint = "https://formspree.io/f/xykaoaen";
 
 export const navLinks = [
+  { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "Work", href: "/work" },
   { label: "Process", href: "/process" },
+  { label: "Results", href: "/results" },
   { label: "Contact", href: "/contact" },
 ];
 

@@ -5,7 +5,7 @@ import type { MetadataRoute } from "next";
 const BASE_URL = "https://www.cdigitalstudios.ca";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/services", "/work", "/process", "/contact"];
+  const routes = ["", "/services", "/work", "/process", "/results", "/contact"];
 
   return routes.map((route) => ({
     url: `${BASE_URL}${route}`,
