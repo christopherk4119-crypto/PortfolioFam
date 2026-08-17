@@ -196,15 +196,13 @@ export const workItems: WorkItem[] = [
     featured: true,
   },
   {
-    icon: "💡",
+    icon: "🏠",
     status: "Live",
-    category: "LED Installation — Calgary",
-    name: "Glow Installations",
-    description:
-      "Premium website for a Calgary LED lighting and home security company. Gallery, service pages and quote form.",
-    tags: ["Gallery", "Multi-page", "Quote System"],
-    href: "https://www.suncityroofinglethbridge.net/",
-    screenshotSrc: "/work/glow-installations.jpg",
+    category: "Roofing",
+    name: "Four Brothers Exteriors",
+    description: "Website for Four Brothers Exteriors, a roofing company.",
+    tags: ["Roofing"],
+    href: "https://fourbrothersexteriors.ca/",
   },
   {
     icon: "🚗",
@@ -214,7 +212,7 @@ export const workItems: WorkItem[] = [
     description:
       "Full website plus subscriber portal with membership plans, benefit tracking, appointment booking, payment integration and admin dashboard.",
     tags: ["Member Portal", "Stripe Payments", "Backend", "AI Automation"],
-    href: "https://autorepairxperts.vercel.app/",
+    href: "https://autorepair-kappa.vercel.app/",
     screenshotSrc: "/work/auto-repair-xperts.webp",
   },
 ];
