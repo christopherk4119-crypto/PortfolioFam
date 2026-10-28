@@ -215,4 +215,23 @@ export const workItems: WorkItem[] = [
     href: "https://autorepair-kappa.vercel.app/",
     screenshotSrc: "/work/auto-repair-xperts.webp",
   },
+  {
+    icon: "🌡️",
+    status: "Live",
+    category: "HVAC",
+    name: "GBL HVAC",
+    description: "Website for GBL HVAC, a heating and cooling company.",
+    tags: ["HVAC"],
+    href: "https://www.gblhvac.ca/",
+  },
+  {
+    icon: "🗑️",
+    status: "Live",
+    category: "Waste Disposal",
+    name: "Star Disposal Services",
+    description:
+      "Website for Star Disposal Services, a waste disposal company.",
+    tags: ["Waste Disposal"],
+    href: "https://www.stardisposalservices.ca/",
+  },
 ];
